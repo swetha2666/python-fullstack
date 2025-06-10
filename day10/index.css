@@ -1,13 +1,66 @@
 .nav{
-    background-color: rgb(248, 72, 148);
+    background-color: rgba(248, 72, 148, 0.873);
     margin:10px;
     padding:20px;
     display :flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .nav.logo{
      font-weight: bold;
+     display:flex;
+     justify-content:center;
 }
 body{
-    background-color: rgb(198, 204, 190);
+    background-color: rgb(5, 7, 31);
 }
+.hero{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 80px);
+      background:linear-gradient(135deg, #25437c,#2a5298);
+      color: white;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+      font-style:italic;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      animation: slideUp 1.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+      .card-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+      background-color: #f9f9f9;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }

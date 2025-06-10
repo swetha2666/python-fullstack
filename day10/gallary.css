@@ -1,0 +1,49 @@
+.nav{
+    background-color: rgba(248, 72, 148, 0.873);
+    margin:10px;
+    padding:20px;
+    display :flex;
+    justify-content: space-evenly;
+}
+.nav.logo{
+     font-weight: bold;
+     display:flex;
+     justify-content:center;
+}
+body{
+    background-color: rgb(21, 99, 106);
+}
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+.grid-item {
+  background: white;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+.grid-item:hover {
+  transform: scale(1.05);
+}
+.table-section {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
