@@ -21,7 +21,7 @@ body{
       background:linear-gradient(135deg, #25437c,#2a5298);
       color: white;
       text-align: center;
-      animation: fadeIn 1.5s ease-in;
+      animation: sv 1.5s ease-in;
       font-style:italic;
     }
 
@@ -30,7 +30,7 @@ body{
       animation: slideUp 1.5s ease-out;
     }
 
-    @keyframes fadeIn {
+    @keyframes sv {
       from { opacity: 0; }
       to { opacity: 1; }
     }
